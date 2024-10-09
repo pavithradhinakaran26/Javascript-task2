@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="app.js" defer></script>
+    <title>task1</title>
+</head>
+<body>
+ 
+    <h1>javascript</h1>
+    <p id="demo"></p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "javascript!"'>Click Me!</button>
+
+   
+      <h1>Heading 1</h1>
+      <p>Welcome To Frontend Forever</p>
+      <h2>Heading 2</h2>
+      <p>Learn web development</p>
+      <h6>Bye</h6>  
+      <button onclick="calc()">count para</button>
+
+   
+      <p id="para"></p>
+    
+
+
+   <h1 id="myText" onmouseover="changeTextColor()" onmouseout="resetTextColor()">Hover over this text!</h1>
+   <button class="btn" id="login">login</button>
+   
+   <h1>Press any key and check the console</h1>
+    <p id="demo"></p>
+    <p id="mydemo">javascript onkeydown</p>
+    
+    
+
+   <script>
+   var heading = document.getElementsByTagName("p");
+   function calc(){
+    alert("total count :"+heading.length);
+    }
+    function changeTextColor() {
+            document.getElementById("myText").style.color = "blue";
+        }
+
+        function resetTextColor() {
+            document.getElementById("myText").style.color = "red";
+        }
+       function myonkeydownFunction() {
+        var text=document.getElementById("textid").value;
+           document.getElementById("myjsdemo").innerHTML ="<font color=\"blue\">you typed:" +text+" </font>"
+       }
+          
+     </script>
+      
+</body>
+</html>
